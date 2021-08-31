@@ -33,7 +33,8 @@ class GameWonFragment : Fragment() {
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener { view: View ->
-            Navigation.findNavController(view).navigate(R.id.action_gameWonFragment_to_gameFragment)
+            Navigation.findNavController(view).navigate(GameOverFragmentDirections.actionGameOverFragment2ToGameFragment())
+            
         }
         return binding.root
     }
